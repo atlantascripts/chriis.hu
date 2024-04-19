@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chriis.hu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/anonymous-pro" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/romero" rel="stylesheet">
+    <script async="" src="main.js"></script>
+    <link rel="icon" type="image/gif" href="https://media.discordapp.net/attachments/726898378973249636/1124522626900041849/4195-flashin-cross.gif?ex=662c5ece&is=6619e9ce&hm=ad397655c1e87cbce88aac8f9df67d3e7797390bf45b285b58555cf9b4a526b6&">
+</head>
+<body>
+    <script>
+
+    </script>
+    <input type="checkbox" autocomplete="off" id="overlay-toggle">
+    <input type="checkbox" autocomplete="off" id="overlay-toggle">
+    <div class="overlay fullscreen">
+        <label for="overlay-toggle" onclick="videoPlay();playSong()">
+            <span class="hover" style="font-family: 'Anonymous Pro'; font-size: 1.0em; text-shadow: 0 0 0.19em white;">tap</span>
+        </label>
+    </div>
+    <video loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+        <source src="https://download944.mediafire.com/t7ehhvoxyvcg9v8y-lNXMfP0RDQUnl91XO-_i0RfDwscdjZX54_vx76IXgu3zACIPU-E4LH1EyDn9ajwdPrOL-TjaCJzZhuAv5sVg6C2MfRRFoqq6Y2nKVkgyOisZuTaxMKkssEm2s4aUppAmnbLYzp4NRn-GUujALitxHhe1VxTCw/5wzzx7btewo669t/video.mp4" type="video/mp4">
+    </video>
+    <section class="fullscreen text-content">
+        <link href="https://fonts.cdnfonts.com/css/romero" rel="stylesheet">
+        <script async="" src="assets/main.js"></script>
+        <h1 style="font-family: Romero; text-shadow: 0 0 0.79em white;">chriis</h1>
+        <div class="socials">
+            <a href="https://www.youtube.com/channel/UCKcvamVrBXfGM9ckfjKTPYQ" style="text-decoration:none; font-family: Anonymous Pro; font-size: 1.1em; text-shadow: 0 0 0.60em white;">youtube</a>
+            <a href="https://instagram.com/goofiest.chriis" style="text-decoration:none; font-family: Anonymous Pro; font-size: 1.1em; text-shadow: 0 0 0.60em white;">insta</a>
+            <a href="https://steamcommunity.com/id/krisz515/" style="text-decoration:none; font-family: Anonymous Pro; font-size: 1.1em; text-shadow: 0 0 0.60em white;">steam</a>
+        </div> 
+</section>
+</div>
+<div class="discord">
+    <iframe src="https://lanyard.cnrad.dev/api/726841719634657430" width="410" height="210" frameborder="0"></iframe>
+
+    
+    <style>
+        .discord {
+            position: absolute;
+            padding: 5px;
+            top: 58%;
+            left: 39%;
+            border-style: solid;
+            border-color: rgba(223, 223, 223, 0.075);
+            border-radius: 20px;
+            border-width: 2px;
+            background-color: rgba(82, 82, 82, 0.5);
+            box-shadow: 0px 0px 0.20em white;
+        }
+    </style>
+</div>
+<div class="btn">
+<audio id="mysong" src="assets/audio.mp3"></audio>
+
+<div class="border">
+    <img src="assets/pause.png" id="playbtn" onclick="playSong()">
+    <img src="assets/play-button.png" id="pausebtn" onclick="pauseAudio();" style="display: none;">
+</div>
+
+
+
+    <style>
+        img{
+         width: 35px;
+        }
+
+        .border {
+            position: absolute;
+            padding: 5px;
+            top: 2%;
+            left: 1%;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.719);
+            border-radius: 15px;
+            border-width: 2px;
+            background-color: rgba(82, 82, 82, 0.5);
+        }
+    </style>
+
+<script>
+  var mysong=document.getElementById("mysong")
+  var playbtn=document.getElementById("playbtn")
+  var pausebtn=document.getElementById("pausebtn")
+    function videoPlay() {
+        var video = document.getElementById("video");
+        video.volume = 0, 0;
+        video.play()
+    }
+    function playSong(){
+        mysong.play();
+        mysong.volume = 0.2, 0;
+        pausebtn.style.display="block";
+        playbtn.style.display="none";
+    }
+
+    function pauseAudio(){
+        mysong.volume = 0, 0;
+        playbtn.style.display="block";
+        pausebtn.style.display="none";
+    }
+</script> 
+</div>
+    </section>
+</body>
+</html>
