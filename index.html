@@ -18,16 +18,15 @@
     <input type="checkbox" autocomplete="off" id="overlay-toggle">
     <input type="checkbox" autocomplete="off" id="overlay-toggle">
     <div class="overlay fullscreen">
-        <label for="overlay-toggle" onclick="videoPlay();playSong()">
+        <label for="overlay-toggle" onclick="playSong()">
             <span class="hover" style="font-family: 'Anonymous Pro'; font-size: 1.0em; text-shadow: 0 0 0.19em white;">tap</span>
         </label>
     </div>
-    <video loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
-        <source src="assets/video.mp4" type="video/mp4">
-    </video>
+    <div class="backgroundimage" style="background-image:url(assets/bg.png)"></div>
     <section class="fullscreen text-content">
         <link href="https://fonts.cdnfonts.com/css/romero" rel="stylesheet">
         <script async="" src="assets/main.js"></script>
+       <img class="pfp" style="width:10%; height:10vh;" src="https://api.lanyard.rest/726841719634657430.png" alt="pfp">
         <h1 style="font-family: Romero; text-shadow: 0 0 0.79em white;">chriis</h1>
         <div class="socials">
             <a href="https://www.youtube.com/channel/UCKcvamVrBXfGM9ckfjKTPYQ" style="text-decoration:none; font-family: Anonymous Pro; font-size: 1.1em; text-shadow: 0 0 0.60em white;">youtube</a>
@@ -91,11 +90,6 @@
   var mysong=document.getElementById("mysong")
   var playbtn=document.getElementById("playbtn")
   var pausebtn=document.getElementById("pausebtn")
-    function videoPlay() {
-        var video = document.getElementById("video");
-        video.volume = 0, 0;
-        video.play()
-    }
     function playSong(){
         mysong.play();
         mysong.volume = 0.2, 0;
